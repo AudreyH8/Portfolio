@@ -1,0 +1,348 @@
+main {
+    color: white;
+
+}
+
+.head {
+    height: 100vh;
+}
+
+.row {
+    width: 100%;
+    margin: 0;
+}
+
+.moi {
+    background-image: url(./images/audrey.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+}
+
+h3 {
+    font-family: 'ABeeZee', sans-serif;
+}
+
+.menu {
+    height: 25%;
+    border: 1px solid black;
+
+}
+
+.presente {
+    background-image: url(./images/main.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.competences {
+    background-image: url(./images/onglets.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.projet {
+    background-image: url(./images/crayon.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contact {
+    background-image: url(./images/tel.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.name,
+.titre,
+.projet-cont p {
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+.titre {
+    -webkit-transition: all ease 1s;
+    transition: all ease 1s;
+    color: black;
+}
+
+.menu:hover .titre {
+    -webkit-transition: all ease 1s;
+    transition: all ease 1s;
+    font-size: 2.2rem;
+
+}
+
+.contacter {
+    -webkit-transition: all ease 1s;
+    transition: all ease 1s;
+}
+
+.contacter:hover {
+    -webkit-transition: all ease 1s;
+    transition: all ease 1s;
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+p {
+    width: 100%;
+    margin-bottom: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.presentation {
+    background-color: rgba(0, 0, 0, .85);
+}
+
+.reseau {
+    width: 150px;
+    height: 100px;
+}
+
+.reseau img {
+    max-width: 200px;
+    width: 100%;
+    height: auto;
+    padding: 0px;
+}
+
+.reseau img:hover {
+    -webkit-animation: rotate 1s linear;
+    animation: rotate 1s linear;
+}
+
+@-webkit-keyframes rotate {
+    from {
+        -webkit-transform: rotateY(0);
+        transform: rotateY(0);
+    }
+
+    to {
+        -webkit-transform: rotateY(360deg);
+        transform: rotateY(360deg);
+    }
+}
+
+@keyframes rotate {
+    from {
+        -webkit-transform: rotateY(0);
+        transform: rotateY(0);
+    }
+
+    to {
+        -webkit-transform: rotateY(360deg);
+        transform: rotateY(360deg);
+    }
+}
+
+.site {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.reseaux {
+    max-width: 700px;
+    margin: 10% auto auto;
+}
+
+.adobe {
+    width: 15%;
+}
+
+.projets {
+    width: 70%;
+    border: 1px black solid;
+}
+
+h1,
+h2 {
+    font-family: "Roboto Slab", serif;
+}
+
+h2 a {
+    color: black;
+}
+
+h2 a:hover {
+    color: black;
+    text-decoration: none;
+    width: 2rem;
+}
+
+.hide {
+    display: none;
+}
+
+#projets div div:hover .hide {
+    display: inline-block;
+    font-size: 1rem;
+    color: black;
+    margin-top: 5px;
+}
+
+.projet-cont {
+    height: 200px;
+    border: 1px solid black;
+    text-align: center;
+    -webkit-transition: all ease 1s;
+    transition: all ease 1s;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.projet-cont p {
+    color: black;
+    font-size: 2rem;
+}
+
+.projet-cont:hover {
+    -webkit-transition: all ease 1s;
+    transition: all ease 1s;
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+    -webkit-box-shadow: 0 2px .4em rgb(216, 216, 216);
+    box-shadow: 0 2px .4em rgb(216, 216, 216);
+
+}
+
+.container {
+    margin-bottom: 50px;
+}
+
+.spliter {
+    width: 100%;
+    margin-bottom: 30px;
+    background-color: rgba(255, 146, 107, .88);
+}
+
+.spliter h2 {
+    position: relative;
+    top: 33%;
+    padding: 30px;
+}
+
+a#Retour {
+    border-radius: 3px;
+    padding: 10px;
+    font-size: 15px;
+    text-align: center;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.25);
+    position: fixed;
+    right: 20px;
+    opacity: 1;
+    z-index: 99999;
+    -webkit-transition: all ease-in 0.2s;
+    transition: all ease-in 0.2s;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    text-decoration: none;
+}
+
+a#Retour:before {
+    content: "\25b2";
+}
+
+a#Retour:hover {
+    background: rgba(0, 0, 0, 1);
+    -webkit-transition: all ease-in 0.2s;
+    transition: all ease-in 0.2s;
+}
+
+a#Retour.Invisible {
+    bottom: -35px;
+    opacity: 0;
+    -webkit-transition: all ease-in 0.5s;
+    transition: all ease-in 0.5s;
+}
+
+a#Retour.Visible {
+    bottom: 20px;
+    opacity: 1;
+}
+
+.contacter {
+    width: 80px;
+}
+
+h4,
+.modal-body p,
+em {
+    color: black;
+}
+
+.bb {
+    background-color: #85b0fe;
+}
+
+.mp {
+    background-color: #fafafa;
+}
+
+.mos {
+    background-image: url(./images/wall.jpg);
+    background-size: cover;
+    height: 100px;
+}
+
+.yf {
+    background-color: #f3e9e7;
+}
+
+.elle {
+    background-color: #fffa9c;
+}
+
+.jpo {
+    background-color: #72adc9;
+}
+
+.archea {
+    background-color: #c4c1c8;
+}
+
+#projets div div {
+    background-color: antiquewhite;
+}
+
+@media screen and (max-width:992px) {
+    .projets {
+        width: 40%;
+    }
+
+    .projet-cont {
+        height: 200px;
+        padding: 15px;
+    }
+
+    #projets div div:hover .hide {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .projet-cont {
+        height: 100px;
+        padding: 15px;
+    }
+
+    .titre {
+        font-size: 1rem;
+    }
+
+    .contacter {
+        width: 40px;
+    }
+
+    #projets div div:hover .hide {
+        display: none;
+    }
+
+    .menu:hover .titre {
+        font-size: 1.5rem;
+    }
+}
